@@ -1,24 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pranav's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    <p>
-        Hi!
-        I am Pranav, I am from Lucknow, India.
-    </p>
-    <br><br>
-    <p>
-        I am a student at IIIT Hyderabad, branch CSD, 2024-29 batch .
-    </p>
-    <br>
-    <img src="Extras/pp.jpeg" alt="Profile Picture" height="200" width="200">
-    <br><br>
-    <img src="Extras/l1.jpg" alt="Lucknow">
-    <img src="Extras/l2.jpg" alt="Station">
-    <img src="Extras/l3.jpg" alt="Stadium">
-    <br><br>
-    <a href="https://github.com/Pranav-S05/Pranav-S05.github.io/raw/main/Extras/cv.pdf">View My CV</a>
+<body id="Top">
+    <div class="navbar">
+        <div class="nav-link">
+            <!-- <a href="#Top">Home</a> -->
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#cv">CV</a>
+            <a href="#analyzer">Text Analyzer</a>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Home Section -->
+        <section id="home">
+            <h1><div class="greeting">Hi <span class="wave">👋</span></div>
+            I'm <span style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: #30ebc6;">Pranav Srivastava</span></h1>
+            <p class="greetings">Welcome to my Portfolio!</p>
+            <br>
+        </section>
+        
+        <div class="contact-sidebar">
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <br><br>
+                <div class="contact-links">
+                    <div class="social-icons">
+                        <a href="mailto:pranav.srivastava@research.iiit.ac.in" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/Pranav-S05" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/_pranavsrivastava_" target="_blank" class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="tel:+917007268567" class="phone-number contact-item">
+                        <i class="fas fa-phone"></i>
+                        +91 7007268567
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-content">
+                <div class="about-flex">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+                            <br>
+                            Hello! I'm Pranav, a first year B.Tech + MS student, in Computer Science at IIIT Hyderabad.
+                            <br><br>
+                            I am still exploring different areas in tech and learning new things.Right now, I'm focused on improving my programming and understanding how systems work. Still figuring things out, but always curious and open to new ideas.
+                            <br>
+                            Outside academics, I enjoy watching sports like cricket or F1 and I also love playing video games and watching movies.
+                        </p> 
+                    </div>
+                    <img src="Extras/pp.jpeg" alt="Profile Pic" class = "profile-img">
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+
+        <!-- Local Images Section -->
+        <div id="gallery">
+            <h2>My Birthplace, Lucknow</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="Extras/l1.jpg" alt="Lucknow 1">
+                        <p class="image-caption">An area near my home.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Extras/l2.jpg" alt="Lucknow 2">
+                        <p class="image-caption">Ekana Stadium: Iconic cricket ground.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Extras/l3.jpg" alt="Lucknow 3">
+                        <p class="image-caption">Rumi Darwaza - The magnificent gateway to old Lucknow</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Extras/l4.jpg" alt="Lucknow 4">
+                        <p class="image-caption">Bara Imambara - Historic architecture marvel</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Extras/l5.jpg" alt="Lucknow 5">
+                        <p class="image-caption">Chota Imambara - Known for its beautiful chandeliers</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Extras/l6.jpeg" alt="Lucknow 6">
+                        <p class="image-caption">Areas around Gomti River</p>
+                    </div>
+                </div>
+                <button class="carousel-button next">❯</button>
+            </div>
+        </div>
+
+        <!-- Add this after the About section and before the gallery section -->
+        <section id="education">
+            <h2>My Education Background</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3>Lucknow Model Public School</h3>
+                    <p class="edu-degree">Class XII (CBSE)</p>
+                    <p class="edu-year">2023 - 2024</p>
+                    <ul class="achievements">
+                        <li>93%</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>Delhi Public School</h3>
+                    <p class="edu-degree">Class X (CBSE)</p>
+                    <p class="edu-year">2021 - 2022</p>
+                    <ul class="achievements">
+                        <li>94%</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>Entrance Exams</h3><p class="edu-year">2024</p>
+                    <p class="edu-degree">JEE Main</p>
+                    <ul class="achievements">
+                        <li>Percentile: 99%ile</li>
+                    </ul>
+                    <p class="edu-degree">UGEE</p>
+                    <ul class="achievements">
+                        <li>Rank: 44</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>IIIT Hyderabad</h3>
+                    <p class="edu-year">2024 - Present</p>
+                    <p class="edu-degree">B.Tech + MS in Computer Science</p>
+                    <ul class="achievements">
+                        <li>First Year Student</li>
+                        <li>Exploring Computer Science fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Bash</li>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Learning</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2>My CV</h2>
+            <p>Download my complete CV here:</p>
+            <a href="https://Pranav-S05.github.io/Extras/cv.pdf" target="_blank" class="cv-button">View My CV</a>
+        </section>
+
+        <br><br><br>
+
+        <!-- Text Analyzer -->
+        <section id="analyzer">
+            <h2>Text Analysis Tool</h2>
+            <div class="analyzer-container">
+                <div class="input-section">
+                    <textarea 
+                        id="text-input" 
+                        placeholder="Enter your text here..."
+                        rows="10"
+                    ></textarea>
+                    <button onclick="analyzeText()" class="analyze-btn">
+                        <i class="fas fa-search"></i> Analyze Text
+                    </button>
+                </div>
+                <div id="results" class="results-container">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a href="#Top" class="back-to-top">
+        <span class="fas fa-arrow-up"></span>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
