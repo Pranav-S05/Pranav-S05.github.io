@@ -28,18 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    logEvent('view', 'page-load');
+    logEvent('view', 'website loaded');
     document.addEventListener('visibilitychange', function() {
         if (document.visibilityState === 'visible') {
-            logEvent('view', 'page-visible');
+            logEvent('view', 'website is visible');
         }
-    });
-    let scrollTimeout;
-    window.addEventListener('scroll', function() {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(function() {
-            logEvent('view', 'page-scroll');
-        }, 150);
     });
     document.addEventListener('click', function(event) {
         const target = event.target;
