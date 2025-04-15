@@ -88,7 +88,7 @@ function analyzeText() {
                          'to', 'toward', 'under', 'up', 'upon', 'with', 'within'];
 
     // Articles
-    const articles = ['a', 'an', 'the'];
+    const articles = ['a', 'an'];
 
     // Count occurrences
     const pronounCounts = {};
